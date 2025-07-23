@@ -1,0 +1,66 @@
+You are a full-stack developer using HTML and Tailwind CSS. Build a multi-page investor website for a private firm, HEI Strategies, offering accredited investors access to home equity investments before securitization.
+
+Website Requirements:
+- Use Tailwind CSS for responsive design
+- Create these HTML files: index.html, about.html, offerings.html, how-it-works.html, resources.html, data-room.html, investor-types.html, calendar.html, compliance.html
+- Use brand colors: #0E1A2B (dark blue), #00A86B (green), #F3F4F6 (gray)
+- Use placeholder `<img>` tags for visuals: stack-diagram.png, return-chart.png
+- Add capital stack diagrams and return charts
+- Include nav bar linking all pages
+- Add embedded lead forms (form element using POST or webhook placeholder)
+- Legal disclaimer footer on every page with SEC Reg D 506(c) notice
+
+Page-Specific Requirements:
+
+index.html (Homepage)
+- Hero section with CTA: “Access Real Estate Alpha Before Wall Street Does”
+- Subhead: “Invest in home equity contracts with high-yield potential and no landlord risk.”
+- CTA: “Request Access”
+- Visual: Capital stack diagram
+- Lead capture form
+
+about.html (About the Firm)
+- Overview of HEI Strategies
+- Team bios (placeholder text)
+- Trust + compliance badges
+
+offerings.html (Investment Offerings)
+- Cards or grid for:
+  - 12% Secured Notes
+  - 10–15% Preferred Equity
+  - Co-Investments with Family Offices
+- Explain capital stack with diagram
+- CTA to request access or view data room
+
+how-it-works.html (HEI Mechanics)
+- Visual: Contract lifecycle
+- Steps: Origination, underwriting, payout, settlement
+- Risks and mitigations section
+
+resources.html (Whitepapers, Blog, Webinars)
+- Cards for downloadable whitepaper (PDF)
+- Embedded webinar video placeholder
+- Link to glossary or educational content
+
+data-room.html (Gated)
+- Form: Name, Email, Accreditation checkbox
+- Button: Request access to PPM, term sheets
+- CTA: “Verified investors can download due diligence package”
+
+investor-types.html
+- Section links or cards for:
+  - Accredited Investor
+  - RIA
+  - Family Office
+  - Broker-Dealer
+- CTA buttons: “View Microsite”
+
+calendar.html
+- Embedded calendar iframe or booking tool placeholder
+- Short blurb: “Schedule a confidential consultation”
+
+compliance.html
+- Full SEC Reg D 506(c) disclaimer
+- Privacy Policy and Terms links
+
+Deploy this as a complete HTML/Tailwind project.
