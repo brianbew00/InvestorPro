@@ -12,9 +12,9 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Column - Header Content */}
-            <div className="lg:col-span-1">
+            <div className="order-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
                 Access Real Estate Alpha Before <span className="text-[#00A86B]">Wall Street Does</span>
               </h1>
@@ -34,7 +34,7 @@ export default function HomePage() {
             </div>
             
             {/* Right Column - Form */}
-            <div className="lg:col-span-1 mt-8 lg:mt-0">
+            <div className="order-2">
               <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
                 <h2 className="text-2xl font-bold mb-2 text-center text-white">Get Exclusive Access</h2>
                 <p className="text-center text-gray-300 mb-6 text-sm">Join our network of sophisticated investors</p>
