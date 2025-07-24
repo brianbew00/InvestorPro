@@ -10,8 +10,8 @@ export default function HomePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div className="lg:col-span-7">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
@@ -40,7 +40,7 @@ export default function HomePage() {
         </div>
 
         {/* Capital Stack Diagram Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 md:pb-16">
           <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20">
             <h2 className="text-2xl font-bold mb-6 text-center text-white">Investment Capital Stack</h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
