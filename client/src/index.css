@@ -24,10 +24,10 @@
   --ring: hsl(218, 54%, 20%);
   --radius: 0.5rem;
   
-  /* Brand Colors */
-  --brand-navy: hsl(218, 54%, 11%);
-  --brand-green: hsl(158, 100%, 33%);
-  --brand-gray: hsl(220, 9%, 96%);
+  /* Brand Colors - HEI Strategies */
+  --brand-navy: #0E1A2B;
+  --brand-green: #00A86B;
+  --brand-gray: #F3F4F6;
 }
 
 .dark {
@@ -65,37 +65,37 @@
 
 /* Brand-specific utilities */
 .bg-brand-navy {
-  background-color: var(--brand-navy);
+  background-color: #0E1A2B;
 }
 
 .bg-brand-green {
-  background-color: var(--brand-green);
+  background-color: #00A86B;
 }
 
 .bg-brand-gray {
-  background-color: var(--brand-gray);
+  background-color: #F3F4F6;
 }
 
 .text-brand-navy {
-  color: var(--brand-navy);
+  color: #0E1A2B;
 }
 
 .text-brand-green {
-  color: var(--brand-green);
+  color: #00A86B;
 }
 
 .border-brand-green {
-  border-color: var(--brand-green);
+  border-color: #00A86B;
 }
 
 .hover\:bg-brand-green:hover {
-  background-color: var(--brand-green);
+  background-color: #00A86B;
 }
 
 .hover\:bg-green-600:hover {
-  background-color: hsl(158, 64%, 28%);
+  background-color: #059669;
 }
 
 .hover\:text-brand-green:hover {
-  color: var(--brand-green);
+  color: #00A86B;
 }

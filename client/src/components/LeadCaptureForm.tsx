@@ -56,7 +56,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
 
   return (
     <div className={className}>
-      <h3 className="text-xl font-semibold mb-4">Get Exclusive Access</h3>
+      <h3 className="text-xl font-semibold mb-4 text-white">Get Exclusive Access</h3>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
@@ -68,7 +68,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
                   <Input 
                     placeholder="First Name" 
                     {...field} 
-                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent"
+                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00A86B] focus:border-transparent"
                   />
                 </FormControl>
                 <FormMessage />
@@ -85,7 +85,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
                   <Input 
                     placeholder="Last Name" 
                     {...field} 
-                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent"
+                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00A86B] focus:border-transparent"
                   />
                 </FormControl>
                 <FormMessage />
@@ -103,7 +103,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
                     type="email"
                     placeholder="Email Address" 
                     {...field} 
-                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent"
+                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00A86B] focus:border-transparent"
                   />
                 </FormControl>
                 <FormMessage />
@@ -121,7 +121,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
                     type="tel"
                     placeholder="Phone Number" 
                     {...field} 
-                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-transparent"
+                    className="px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#00A86B] focus:border-transparent"
                   />
                 </FormControl>
                 <FormMessage />
@@ -141,7 +141,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
                     className="mt-1 h-4 w-4 text-brand-green border-white/30 rounded focus:ring-brand-green focus:ring-offset-0 bg-white/20"
                   />
                 </FormControl>
-                <Label className="text-sm text-blue-100">
+                <Label className="text-sm text-gray-200">
                   I am an accredited investor as defined by SEC regulations
                 </Label>
                 <FormMessage />
@@ -152,7 +152,7 @@ export default function LeadCaptureForm({ className = "" }: LeadCaptureFormProps
           <Button 
             type="submit" 
             disabled={mutation.isPending}
-            className="w-full bg-brand-green hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="w-full bg-[#00A86B] hover:bg-[#059669] text-white px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             {mutation.isPending ? "Submitting..." : "Request Access"}
           </Button>
