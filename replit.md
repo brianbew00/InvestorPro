@@ -94,3 +94,12 @@ The application is configured for deployment with the following approach:
    - Replit-specific configurations included
 
 The application is designed with a clear upgrade path from the current in-memory storage to a full PostgreSQL implementation, with all the necessary infrastructure already in place.
+
+## Recent Changes
+
+### January 24, 2025
+- Fixed homepage hero section layout with proper 2-column grid structure
+- Header content ("Access Real Estate Alpha Before Wall Street Does") positioned in left column
+- Lead capture form ("Get Exclusive Access") positioned in right column within same hero section
+- Enhanced responsive design with proper grid classes and ordering
+- Confirmed layout working correctly across different screen sizes
