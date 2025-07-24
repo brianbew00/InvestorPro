@@ -10,9 +10,9 @@ export default function HomePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-start">
+      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 w-full">
+          <div className="grid lg:grid-cols-2 lg:gap-12 items-start h-full">
             <div className="lg:col-span-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
                 Access Real Estate Alpha Before <span className="text-[#00A86B]">Wall Street Does</span>
@@ -80,8 +80,8 @@ export default function HomePage() {
               </div>
             </div>
             
-            <div className="lg:col-span-1 mt-12 lg:mt-0">
-              <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20 sticky top-8">
+            <div className="lg:col-span-1 mt-8 lg:mt-0">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
                 <h2 className="text-2xl font-bold mb-2 text-center text-white">Get Exclusive Access</h2>
                 <p className="text-center text-gray-300 mb-6 text-sm">Join our network of sophisticated investors</p>
                 <LeadCaptureForm />
