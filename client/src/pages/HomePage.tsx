@@ -10,14 +10,15 @@ export default function HomePage() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 w-full">
-          <div className="grid lg:grid-cols-2 lg:gap-12 items-start h-full">
+      <section className="bg-gradient-to-br from-[#0E1A2B] via-[#1a2332] to-[#243040] text-white py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 lg:gap-12 items-start">
+            {/* Left Column - Header Content */}
             <div className="lg:col-span-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
                 Access Real Estate Alpha Before <span className="text-[#00A86B]">Wall Street Does</span>
               </h1>
-              <p className="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-200 mb-8 leading-relaxed">
                 Invest in home equity contracts with high-yield potential and no landlord risk.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -30,61 +31,64 @@ export default function HomePage() {
                   </Button>
                 </Link>
               </div>
-              
-              {/* Key Benefits Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                  <div className="flex items-center mb-3">
-                    <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
-                    <h3 className="text-lg font-semibold text-white">High-Yield Returns</h3>
-                  </div>
-                  <p className="text-sm text-gray-300">Target returns of 8-15% annually with quarterly distributions</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                  <div className="flex items-center mb-3">
-                    <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
-                    <h3 className="text-lg font-semibold text-white">No Landlord Risk</h3>
-                  </div>
-                  <p className="text-sm text-gray-300">No tenant management, repairs, or vacancy concerns</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                  <div className="flex items-center mb-3">
-                    <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
-                    <h3 className="text-lg font-semibold text-white">Diversified Portfolio</h3>
-                  </div>
-                  <p className="text-sm text-gray-300">Access to multiple geographic markets and property types</p>
-                </div>
-                <div className="bg-white/5 p-4 rounded-lg border border-white/10">
-                  <div className="flex items-center mb-3">
-                    <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
-                    <h3 className="text-lg font-semibold text-white">SEC Compliant</h3>
-                  </div>
-                  <p className="text-sm text-gray-300">Fully regulated Reg D 506(c) private offerings</p>
-                </div>
-              </div>
-              
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">
-                <div className="flex items-center">
-                  <span className="text-[#00A86B] mr-2">✓</span>
-                  SEC Registered
-                </div>
-                <div className="flex items-center">
-                  <span className="text-[#00A86B] mr-2">✓</span>
-                  $50M+ Assets Under Management
-                </div>
-                <div className="flex items-center">
-                  <span className="text-[#00A86B] mr-2">✓</span>
-                  Accredited Investors Only
-                </div>
-              </div>
             </div>
             
+            {/* Right Column - Form */}
             <div className="lg:col-span-1 mt-8 lg:mt-0">
               <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
                 <h2 className="text-2xl font-bold mb-2 text-center text-white">Get Exclusive Access</h2>
                 <p className="text-center text-gray-300 mb-6 text-sm">Join our network of sophisticated investors</p>
                 <LeadCaptureForm />
+              </div>
+            </div>
+          </div>
+          
+          {/* Key Benefits Section - Below Hero */}
+          <div className="mt-16 pt-16 border-t border-white/20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-3">
+                  <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
+                  <h3 className="text-lg font-semibold text-white">High-Yield Returns</h3>
+                </div>
+                <p className="text-sm text-gray-300">Target returns of 8-15% annually with quarterly distributions</p>
+              </div>
+              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-3">
+                  <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
+                  <h3 className="text-lg font-semibold text-white">No Landlord Risk</h3>
+                </div>
+                <p className="text-sm text-gray-300">No tenant management, repairs, or vacancy concerns</p>
+              </div>
+              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-3">
+                  <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
+                  <h3 className="text-lg font-semibold text-white">Diversified Portfolio</h3>
+                </div>
+                <p className="text-sm text-gray-300">Access to multiple geographic markets and property types</p>
+              </div>
+              <div className="bg-white/5 p-4 rounded-lg border border-white/10">
+                <div className="flex items-center mb-3">
+                  <div className="w-3 h-3 bg-[#00A86B] rounded-full mr-3"></div>
+                  <h3 className="text-lg font-semibold text-white">SEC Compliant</h3>
+                </div>
+                <p className="text-sm text-gray-300">Fully regulated Reg D 506(c) private offerings</p>
+              </div>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+              <div className="flex items-center">
+                <span className="text-[#00A86B] mr-2">✓</span>
+                SEC Registered
+              </div>
+              <div className="flex items-center">
+                <span className="text-[#00A86B] mr-2">✓</span>
+                $50M+ Assets Under Management
+              </div>
+              <div className="flex items-center">
+                <span className="text-[#00A86B] mr-2">✓</span>
+                Accredited Investors Only
               </div>
             </div>
           </div>
