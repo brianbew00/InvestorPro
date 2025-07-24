@@ -129,8 +129,112 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Investment Process Section */}
+      {/* Explore Our Platform Section */}
       <section className="bg-[#F3F4F6] py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1A2B] mb-4">
+              Explore Our Investment Platform
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover comprehensive resources and detailed information about our investment opportunities and strategies.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/offerings">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#00A86B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">$</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">Current Offerings</h3>
+                <p className="text-gray-600 mb-4">View available investment opportunities with detailed returns, terms, and market analysis.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">Explore Offerings →</span>
+              </div>
+            </Link>
+            
+            <Link href="/how-it-works">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#0E1A2B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">?</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">How It Works</h3>
+                <p className="text-gray-600 mb-4">Learn our step-by-step investment process and understand how home equity contracts generate returns.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">Learn More →</span>
+              </div>
+            </Link>
+            
+            <Link href="/data-room">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#00A86B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">📊</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">Data Room Access</h3>
+                <p className="text-gray-600 mb-4">Access detailed financial models, legal documents, and due diligence materials for qualified investors.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">Request Access →</span>
+              </div>
+            </Link>
+            
+            <Link href="/investor-types">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#0E1A2B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">👥</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">Investor Types</h3>
+                <p className="text-gray-600 mb-4">Understand accreditation requirements and which investment tier matches your profile and goals.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">Find Your Tier →</span>
+              </div>
+            </Link>
+            
+            <Link href="/resources">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#00A86B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">📚</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">Resources & Insights</h3>
+                <p className="text-gray-600 mb-4">Read market analysis, research reports, and educational content about home equity investments.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">View Resources →</span>
+              </div>
+            </Link>
+            
+            <Link href="/calendar">
+              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow cursor-pointer border border-gray-200 hover:border-[#00A86B]">
+                <div className="w-12 h-12 bg-[#0E1A2B] rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-white text-xl font-bold">📅</span>
+                </div>
+                <h3 className="text-xl font-semibold text-[#0E1A2B] mb-3">Schedule Consultation</h3>
+                <p className="text-gray-600 mb-4">Book a personalized consultation with our investment team to discuss your portfolio strategy.</p>
+                <span className="text-[#00A86B] font-semibold hover:underline">Schedule Now →</span>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Started Today Section */}
+      <section className="bg-gradient-to-r from-[#0E1A2B] to-[#1a2332] py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Ready to Start Building Wealth?
+          </h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Join sophisticated investors who are already generating consistent returns through our home equity investment platform.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-[#00A86B] hover:bg-[#059669] text-white px-8 py-4 text-lg font-semibold">
+              Request Access Today
+            </Button>
+            <Link href="/about">
+              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0E1A2B] px-8 py-4 text-lg font-semibold">
+                Learn About Our Team
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Process Section */}
+      <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1A2B] mb-4">
