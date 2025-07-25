@@ -10,8 +10,6 @@
     { "source": "/offerings", "destination": "/offerings.html" },
     { "source": "/resources", "destination": "/resources.html" },
     { "source": "/not-found", "destination": "/not-found.html" }
-  ]
-  {
+  ],
   "fallback": "not-found.html"
-}
 }
