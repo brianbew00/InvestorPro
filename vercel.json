@@ -9,13 +9,7 @@
     { "source": "/howitworks", "destination": "/howitworks.html" },
     { "source": "/investortypes", "destination": "/investortypes.html" },
     { "source": "/offerings", "destination": "/offerings.html" },
-    { "source": "/resources", "destination": "/resources.html" }
-  ],
-  "redirects": [
-    {
-      "source": "/not-found",
-      "destination": "/not-found.html",
-      "statusCode": 404
-    }
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/(.*)", "destination": "/not-found.html" }
   ]
 }
