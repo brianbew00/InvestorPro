@@ -29,7 +29,7 @@ export default defineConfig(async () => {
       emptyOutDir: true,
       rollupOptions: {
         input: {
-          main: path.resolve(__dirname, "index.html"),
+          index: path.resolve(__dirname, "index.html"),
           about: path.resolve(__dirname, "about.html"),
           calendar: path.resolve(__dirname, "calendar.html"),
           compliance: path.resolve(__dirname, "compliance.html"),
