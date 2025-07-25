@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import HowItWorksPage from "../pages/HowItWorksPage";
+import HowItWorksPage from "../pages/howitworks";
 import "../index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(<HowItWorksPage />);

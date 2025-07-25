@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import InvestorTypesPage from "../pages/InvestorTypesPage";
+import InvestorTypesPage from "../pages/investortypes";
 import "../index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(<InvestorTypesPage />);
