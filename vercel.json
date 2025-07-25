@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/calendar", "destination": "/calendar.html" },
+    { "source": "/compliance", "destination": "/compliance.html" },
+    { "source": "/dataroom", "destination": "/dataroom.html" },
+    { "source": "/howitworks", "destination": "/howitworks.html" },
+    { "source": "/investortypes", "destination": "/investortypes.html" },
+    { "source": "/offerings", "destination": "/offerings.html" },
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/not-found", "destination": "/not-found.html" }
+  ]
+}

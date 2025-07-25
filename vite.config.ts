@@ -7,8 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     runtimeErrorOverlay(),
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
+    ...(process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined
       ? [
           await import("@replit/vite-plugin-cartographer").then((m) =>
             m.cartographer()
@@ -18,20 +17,27 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "src"),             // ✅ updated from "client/src"
-      "@shared": path.resolve(import.meta.dirname, "shared"),     // ✅ still valid
-      "@assets": path.resolve(import.meta.dirname, "attached_assets") // ✅ still valid
+      "@": path.resolve(import.meta.dirname, "src"),
+      "@shared": path.resolve(import.meta.dirname, "shared"),
+      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname),  // ✅ now it's the root
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"), // ✅ simpler build path
+    outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
-  },
-  server: {
-    fs: {
-      strict: true,
-      deny: ["**/.*"],
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        about: path.resolve(__dirname, "about.html"),
+        calendar: path.resolve(__dirname, "calendar.html"),
+        compliance: path.resolve(__dirname, "compliance.html"),
+        dataroom: path.resolve(__dirname, "dataroom.html"),
+        howitworks: path.resolve(__dirname, "howitworks.html"),
+        investortypes: path.resolve(__dirname, "investortypes.html"),
+        offerings: path.resolve(__dirname, "offerings.html"),
+        resources: path.resolve(__dirname, "resources.html"),
+        notfound: path.resolve(__dirname, "not-found.html"),
+      },
     },
   },
 });
