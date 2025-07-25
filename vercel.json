@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
@@ -8,8 +9,9 @@
     { "source": "/howitworks", "destination": "/howitworks.html" },
     { "source": "/investortypes", "destination": "/investortypes.html" },
     { "source": "/offerings", "destination": "/offerings.html" },
-    { "source": "/resources", "destination": "/resources.html" },
-    { "source": "/not-found", "destination": "/not-found.html" }
+    { "source": "/resources", "destination": "/resources.html" }
   ],
-  "fallback": "not-found.html"
+  "error": {
+    "notFound": "/not-found.html"
+  }
 }
