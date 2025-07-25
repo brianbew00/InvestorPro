@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/", "destination": "/index.html" },
     { "source": "/about", "destination": "/about.html" },
     { "source": "/calendar", "destination": "/calendar.html" },
     { "source": "/compliance", "destination": "/compliance.html" },
@@ -10,4 +11,7 @@
     { "source": "/resources", "destination": "/resources.html" },
     { "source": "/not-found", "destination": "/not-found.html" }
   ]
+  {
+  "fallback": "not-found.html"
+}
 }
