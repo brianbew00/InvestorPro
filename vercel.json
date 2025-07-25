@@ -11,7 +11,11 @@
     { "source": "/offerings", "destination": "/offerings.html" },
     { "source": "/resources", "destination": "/resources.html" }
   ],
-  "error": {
-    "notFound": "/not-found.html"
-  }
+  "redirects": [
+    {
+      "source": "/not-found",
+      "destination": "/not-found.html",
+      "statusCode": 404
+    }
+  ]
 }
