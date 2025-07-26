@@ -1,22 +1,22 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Router } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
+import NotFound from "./pages/not-found";
 
 // Import all pages
-import HomePage from "@/pages/HomePage";
-import AboutPage from "@/pages/AboutPage";
-import OfferingsPage from "@/pages/OfferingsPage";
-import HowItWorksPage from "@/pages/HowItWorksPage";
-import ResourcesPage from "@/pages/ResourcesPage";
-import DataRoomPage from "@/pages/DataRoomPage";
-import InvestorTypesPage from "@/pages/InvestorTypesPage";
-import CalendarPage from "@/pages/CalendarPage";
-import CompliancePage from "@/pages/CompliancePage";
+import HomePage from "./pages/index";
+import AboutPage from "./pages/about";
+import OfferingsPage from "./pages/offerings";
+import HowItWorksPage from "./pages/howitworks";
+import ResourcesPage from "./pages/resources";
+import DataRoomPage from "./pages/dataroom";
+import InvestorTypesPage from "./pages/investortypes";
+import CalendarPage from "./pages/calendar";
+import CompliancePage from "./pages/compliance";
 
-function Router() {
+function RouterComponent() {
   return (
     <Switch>
       <Route path="/" component={HomePage} />
@@ -28,7 +28,8 @@ function Router() {
       <Route path="/investor-types" component={InvestorTypesPage} />
       <Route path="/calendar" component={CalendarPage} />
       <Route path="/compliance" component={CompliancePage} />
-      {/* Fallback to 404 */}
+      <Route path="/privacy-policy" component={NotFound} />
+      <Route path="/terms-of-use" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -39,7 +40,9 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <Router>
+          <RouterComponent />
+        </Router>
       </TooltipProvider>
     </QueryClientProvider>
   );

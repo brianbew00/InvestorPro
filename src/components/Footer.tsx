@@ -14,10 +14,10 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="text-blue-200 hover:text-white">
+              <a href="https://linkedin.com/company/hei-strategies" className="text-blue-200 hover:text-white">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-blue-200 hover:text-white">
+              <a href="https://twitter.com/hei_strategies" className="text-blue-200 hover:text-white">
                 <Twitter className="h-6 w-6" />
               </a>
             </div>
@@ -57,8 +57,8 @@ export default function Footer() {
               © 2024 HEI Strategies. All rights reserved. Licensed investment advisor.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="/privacy-policy" className="text-blue-200 hover:text-white text-sm">Privacy Policy</a>
-              <a href="/terms-of-use" className="text-blue-200 hover:text-white text-sm">Terms of Use</a>
+              <Link href="/privacy-policy" className="text-blue-200 hover:text-white text-sm">Privacy Policy</Link>
+              <Link href="/terms-of-use" className="text-blue-200 hover:text-white text-sm">Terms of Use</Link>
               <Link href="/compliance" className="text-blue-200 hover:text-white text-sm">Legal</Link>
             </div>
           </div>
