@@ -3,18 +3,18 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
+import NotFound from "./pages/not-found";
 
 // Import all pages
-import HomePage from "@/pages/HomePage";
-import AboutPage from "@/pages/AboutPage";
-import OfferingsPage from "@/pages/OfferingsPage";
-import HowItWorksPage from "@/pages/HowItWorksPage";
-import ResourcesPage from "@/pages/ResourcesPage";
-import DataRoomPage from "@/pages/DataRoomPage";
-import InvestorTypesPage from "@/pages/InvestorTypesPage";
-import CalendarPage from "@/pages/CalendarPage";
-import CompliancePage from "@/pages/CompliancePage";
+import HomePage from "./pages/index";
+import AboutPage from "./pages/about";
+import OfferingsPage from "./pages/offerings";
+import HowItWorksPage from "./pages/howitworks";
+import ResourcesPage from "./pages/resources";
+import DataRoomPage from "./pages/dataroom";
+import InvestorTypesPage from "./pages/investortypes";
+import CalendarPage from "./pages/calendar";
+import CompliancePage from "./pages/compliance";
 
 function Router() {
   return (
