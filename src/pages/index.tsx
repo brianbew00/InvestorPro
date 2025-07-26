@@ -108,9 +108,9 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             {[
               ["/offerings", "$", "Current Offerings", "View available investment opportunities..."],
-              ["/how-it-works", "?", "How It Works", "Learn our step-by-step investment process..."],
-              ["/data-room", "📊", "Data Room Access", "Access detailed financial models..."],
-              ["/investor-types", "👥", "Investor Types", "Understand accreditation requirements..."],
+              ["/howitworks", "?", "How It Works", "Learn our step-by-step investment process..."],
+              ["/dataroom", "📊", "Data Room Access", "Access detailed financial models..."],
+              ["/investortypes", "👥", "Investor Types", "Understand accreditation requirements..."],
               ["/resources", "📚", "Resources & Insights", "Read market analysis and educational content..."],
               ["/calendar", "📅", "Schedule Consultation", "Book a personalized consultation..."]
             ].map(([href, icon, title, desc], i) => (
