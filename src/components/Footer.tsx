@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
@@ -25,23 +24,23 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Investors</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><Link href="/offerings" className="hover:text-white transition-colors">Investment Offerings</Link></li>
-              <li><Link href="/data-room" className="hover:text-white transition-colors">Data Room</Link></li>
-              <li><Link href="/resources" className="hover:text-white transition-colors">Resources</Link></li>
-              <li><Link href="/calendar" className="hover:text-white transition-colors">Schedule Call</Link></li>
+              <li><a href="/offerings" target="_self" rel="noopener" className="hover:text-white transition-colors">Investment Offerings</a></li>
+              <li><a href="/dataroom" target="_self" rel="noopener" className="hover:text-white transition-colors">Data Room</a></li>
+              <li><a href="/resources" target="_self" rel="noopener" className="hover:text-white transition-colors">Resources</a></li>
+              <li><a href="/calendar" target="_self" rel="noopener" className="hover:text-white transition-colors">Schedule Call</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/how-it-works" className="hover:text-white transition-colors">How It Works</Link></li>
-              <li><Link href="/compliance" className="hover:text-white transition-colors">Compliance</Link></li>
-              <li><a href="/careers" className="hover:text-white transition-colors">Careers</a></li>
+              <li><a href="/about" target="_self" rel="noopener" className="hover:text-white transition-colors">About Us</a></li>
+              <li><a href="/howitworks" target="_self" rel="noopener" className="hover:text-white transition-colors">How It Works</a></li>
+              <li><a href="/compliance" target="_self" rel="noopener" className="hover:text-white transition-colors">Compliance</a></li>
+              <li><a href="/careers" target="_self" rel="noopener" className="hover:text-white transition-colors">Careers</a></li>
             </ul>
           </div>
         </div>
-        
+
         {/* Legal Disclaimer */}
         <div className="border-t border-blue-800 pt-8">
           <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6 mb-6">
@@ -57,9 +56,9 @@ export default function Footer() {
               © 2024 HEI Strategies. All rights reserved. Licensed investment advisor.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy-policy" className="text-blue-200 hover:text-white text-sm">Privacy Policy</Link>
-              <Link href="/terms-of-use" className="text-blue-200 hover:text-white text-sm">Terms of Use</Link>
-              <Link href="/compliance" className="text-blue-200 hover:text-white text-sm">Legal</Link>
+              <a href="/privacy-policy" target="_self" rel="noopener" className="text-blue-200 hover:text-white text-sm">Privacy Policy</a>
+              <a href="/terms-of-use" target="_self" rel="noopener" className="text-blue-200 hover:text-white text-sm">Terms of Use</a>
+              <a href="/compliance" target="_self" rel="noopener" className="text-blue-200 hover:text-white text-sm">Legal</a>
             </div>
           </div>
         </div>
