@@ -22,14 +22,14 @@ function RouterComponent() {
       <Route path="/" component={HomePage} />
       <Route path="/about" component={AboutPage} />
       <Route path="/offerings" component={OfferingsPage} />
-      <Route path="/how-it-works" component={HowItWorksPage} />
+      <Route path="/howitworks" component={HowItWorksPage} />
       <Route path="/resources" component={ResourcesPage} />
-      <Route path="/data-room" component={DataRoomPage} />
-      <Route path="/investor-types" component={InvestorTypesPage} />
+      <Route path="/dataroom" component={DataRoomPage} />
+      <Route path="/investortypes" component={InvestorTypesPage} />
       <Route path="/calendar" component={CalendarPage} />
       <Route path="/compliance" component={CompliancePage} />
-      <Route path="/privacy-policy" component={NotFound} />
-      <Route path="/terms-of-use" component={NotFound} />
+      <Route path="/privacypolicy" component={NotFound} />
+      <Route path="/termsofuse" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
