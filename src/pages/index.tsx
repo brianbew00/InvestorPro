@@ -25,7 +25,7 @@ export default function HomePage() {
                   Request Access
                 </Button>
                 <a href="/offerings" target="_self" rel="noopener">
-                  <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0E1A2B] px-8 py-4 rounded-lg text-lg font-semibold transition-colors">
+                  <Button variant="outline" className="border-2 border-white text-black bg-white hover:bg-gray-200 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
                     View Offerings
                   </Button>
                 </a>
@@ -139,7 +139,7 @@ export default function HomePage() {
               Request Access Today
             </Button>
             <a href="/about" target="_self" rel="noopener">
-              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0E1A2B] px-8 py-4 text-lg font-semibold">
+              <Button variant="outline" className="border-2 border-white text-black bg-white hover:bg-gray-200 px-8 py-4 text-lg font-semibold transition-all duration-300">
                 Learn About Our Team
               </Button>
             </a>

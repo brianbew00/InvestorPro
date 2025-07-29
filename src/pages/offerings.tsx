@@ -166,7 +166,7 @@ export default function OfferingsPage() {
                       View Data Room
                     </Button>
                   </Link>
-                  <Button variant="outline" className="border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <Button variant="outline" className="border-2 border-brand-navy text-black bg-white hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-all duration-300">
                     Request Access
                   </Button>
                 </div>
