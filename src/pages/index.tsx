@@ -36,7 +36,7 @@ export default function HomePage() {
             <div className="order-2">
               <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
                 <h2 className="text-2xl font-bold mb-2 text-center text-white">Get Exclusive Access</h2>
-                <p className="text-center text-gray-300 mb-6 text-sm">Join our network of sophisticated investors</p>
+                <p className="text-center text-gray-300 mb-6 text-sm">Join our network of investors</p>
                 <LeadCaptureForm />
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0E1A2B] mb-4">Why Choose HEI Strategies?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-            We provide sophisticated investors with exclusive access to high-performing home equity investments through our proven strategy and rigorous due diligence process.
+            We provide accredited and institutional investors with exclusive access to high-performing home equity investments through our proven strategy and rigorous due diligence process.
           </p>
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {/* Strategy cards */}
@@ -132,7 +132,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Start Building Wealth?</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Join sophisticated investors who are already generating consistent returns through our home equity investment platform.
+            Join investors who are already generating consistent returns through our home equity investment platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-[#00A86B] hover:bg-[#059669] text-white px-8 py-4 text-lg font-semibold">
